@@ -1,0 +1,34 @@
+<style>
+    html, body {
+        margin: 0!important;
+        padding: 0!important;
+    }
+</style>
+
+<title>Audio Recording | RecordRTC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<br>
+
+<button id="btn-start-recording">Start Recording</button>
+<button id="btn-stop-recording" disabled>Stop Recording</button>
+<button id="btn-download-recording" disabled>Download</button>
+<button id="btn-save-sentence">Save Sentence</button>
+<select id="sentence">
+    <option value="sentence1">Sentence text 1</option>
+    <option value="sentence2">Sentence text 2</option>
+    <option value="sentence3">Sentence text 3</option>
+    <option value="sentence4">Sentence text 4</option>
+    <option value="sentence5">Sentence text 5</option>
+</select>
+
+<hr>
+<div><audio controls autoplay playsinline></audio></div>
+
+<ul id="saved-sentences"></ul>
+
+<script src="/RecordRTC.js"></script>
+<script src="/capture.js"></script>
+
+
+<footer style="margin-top: 20px;"><small id="send-message"></small></footer>
